@@ -2,7 +2,7 @@
 
 JINS MEME のWeb api(OAuth2)からのデータ取得や、グラフを描画するサンプルです。
 
-## 準備
+## モジュールのインストール
 
 pip install oauthlib 
 
@@ -15,4 +15,8 @@ OAuth2の認可コードフローに沿って15秒間隔データ、60秒間隔�
 - `python data_fetch.py` を実行します
 - 認可コードフローなのでブラウザが開きアドレスバーにリダイレクトURLが表示されます(リダイレクトURLにWebサーバーを設定していないのでアクセスできないとの表示がでますが、問題ありません)
 - アドレスバーのURLをPythonのREPLにコピペします
-- データが取得され、pandas dataframeに変換し、CSV(data.csv)として保存します
+- データが取得され、pandas dataframeに変換し、CSV(15s_interval_data.csv, 60s_interval_data.csv)として保存します
+
+## visualization.py
+
+under construction

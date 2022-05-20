@@ -19,10 +19,10 @@ state = 'somestate'
 response_type = 'code'
 service_id = 'meme'
 
-#JINS MEME Developers のアプリ一覧から取得できる値
+#JINS MEME Developers サイトから取得して以下をセットしてください
 client_id = 'your_client_id'
 client_secret = 'your_client_secret'
-redirect_uri = 'https://localhost:5001' #使用しているライブラリでhttpsが必須です
+redirect_uri = 'your_redirect_uri' #ここで使用しているライブラリではhttpsが必須です
 
 #データ取得レンジ、1日以内をセットしてください
 params = {
