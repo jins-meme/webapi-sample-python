@@ -1,4 +1,5 @@
 *.csv
+*.pem
 unit.py
 
 # Byte-compiled / optimized / DLL files
