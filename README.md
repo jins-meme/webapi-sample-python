@@ -36,3 +36,14 @@ openssl req -x509 -new -days 365 -nodes \
 - Specify the data fetch date range in fetch_from / fetch_to with zero fill.
 - Run `python data_fetch_auto.py`.
 - The data is retrieved, converted to a pandas dataframe, and saved as CSV (15s_interval_data.csv, 60s_interval_data.csv)
+
+## activities_heatmap.py
+
+This sample reads a CSV of data at 60 second intervals and draws a heat map. Configurable items are as follows.
+
+- _minutes: Object(string), how many minutes to summarize, preferably a number divisible by 60
+- _index: Object(string), "act" (overall index that includes the number of steps plus the number of head movements at low step counts) or "stp" (step count only)
+- _scale: Object(string), "lin" or 'log
+- _function: Object(string), "max" or "min".
+
+![activities_heatmap](./images/heatmap.png)

@@ -36,3 +36,14 @@ openssl req -x509 -new -days 365 -nodes \
 - fetch_from / fetch_to にデータ取得日付レンジを0埋めで指定してください
 - `python data_fetch_auto.py` を実行します
 - データが取得され、pandas dataframeに変換し、CSV(15s_interval_data.csv, 60s_interval_data.csv)として保存します
+
+## activities_heatmap.py
+
+60秒間隔データのCSVを読み込み、ヒートマップを描画するサンプルです。設定可能項目は以下になります。
+
+- _minutes: Object(string), 何分毎にサマルか, 60で割り切れる数字が望ましい
+- _index: Object(string), "act"(歩数に加え、低歩数時に頭部運動回数を当てた総合指標)か"stp"(歩数のみ)
+- _scale: Object(string), "lin"か'log'
+- _function: Object(string),  "max"か"min"
+
+![activities_heatmap](./images/heatmap.png)
