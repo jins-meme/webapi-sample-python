@@ -44,6 +44,6 @@ This sample reads a CSV of data at 60 second intervals and draws a heat map. Con
 - _minutes: Object(string), how many minutes to summarize, preferably a number divisible by 60
 - _index: Object(string), "act" (overall index that includes the number of steps plus the number of head movements at low step counts) or "stp" (step count only)
 - _scale: Object(string), "lin" or 'log
-- _function: Object(string), "max" or "min".
+- _function: Object(string), "max" or "mean".
 
 ![activities_heatmap](./images/heatmap.png)

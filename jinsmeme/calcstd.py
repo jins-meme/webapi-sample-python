@@ -85,7 +85,7 @@ class CalcStandardData:
         _minutes: Object(string), 何分毎にサマルか, 60で割り切れる数字が望ましい
         _index: Object(string), "act"(歩数に加え、低歩数時は頭部運動回数を当てた総合指標)か"stp"(歩数のみ)
         _scale: Object(string), "lin"か'log'
-        _function: Object(string),  "max"か"min"
+        _function: Object(string),  "max"か"mean"
     
     Returns:
         ヒートマップ描画用のデータフレーム
