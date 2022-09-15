@@ -41,7 +41,7 @@ openssl req -x509 -new -days 365 -nodes \
 
 This sample reads a CSV of data at 60 second intervals and draws a heat map. Configurable items are as follows.
 
-- _minutes: Object(string), how many minutes to summarize, preferably a number divisible by 60
+- _minutes: Object(string), how many minutes to summarize, a divisible number (5/10/15/20/30) for 60 is preferred
 - _index: Object(string), "act" (overall index that includes the number of steps plus the number of head movements at low step counts) or "stp" (step count only)
 - _scale: Object(string), "lin" or 'log
 - _function: Object(string), "max" or "mean".

@@ -41,7 +41,7 @@ openssl req -x509 -new -days 365 -nodes \
 
 60秒間隔データのCSVを読み込み、ヒートマップを描画するサンプルです。設定可能項目は以下になります。
 
-- _minutes: Object(string), 何分毎にサマルか, 60で割り切れる数字が望ましい
+- _minutes: Object(string), 何分毎にサマルか, 60に対して割り切れる数字(5/10/15/20/30)が望ましい
 - _index: Object(string), "act"(歩数に加え、低歩数時に頭部運動回数を当てた総合指標)か"stp"(歩数のみ)
 - _scale: Object(string), "lin"か'log'
 - _function: Object(string),  "max"か"mean"
