@@ -4,7 +4,8 @@ JINS MEME のWeb api(OAuth2)からのデータ取得をするサンプルです�
 
 ## モジュールのインストール
 
-pip install oauthlib 
+※仮想環境の作成をオススメします。
+pip install oauthlib pandas
 
 ## data_fetch.py
 
